@@ -1,0 +1,64 @@
+version: '3'
+services:
+  # RabbitMQ Service
+  rabbitmq:
+    image: 'rabbitmq:management'
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+
+  # OrderService
+  orderservice:
+    build: ./OrderService
+    ports:
+      - '8000:8000'
+    depends_on:
+      - rabbitmq
+
+  # InventoryService
+  inventoryservice:
+    build: ./InventoryService
+    ports:
+      - '8003:8003'
+    depends_on:
+      - rabbitmq
+
+  # PaymentService
+  paymentservice:
+    build: ./PaymentService
+    ports:
+      - '8004:8004'
+    depends_on:
+      - rabbitmq
+
+  # EmailService
+  emailservice:
+    build: ./EmailService
+    ports:
+      - '8005:8005'
+    depends_on:
+      - rabbitmq
+
+  # MerchantService
+  merchantservice:
+    build: ./MerchantService
+    ports:
+      - '8006:8006'
+    depends_on:
+      - rabbitmq
+
+  # BuyerService
+  buyerservice:
+    build: ./BuyerService
+    ports:
+      - '8007:8007'
+    depends_on:
+      - rabbitmq
+
+  # Bonus API Layer
+  apilayer:
+    build: ./ApiLayer
+    ports:
+      - '8008:8008'
+    depends_on:
+      - rabbitmq
