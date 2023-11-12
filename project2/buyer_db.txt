@@ -1,0 +1,16 @@
+{
+  "buyers": {
+    "301": {
+      "name": "John Johnson",
+      "ssn": "7000000000",
+      "email": "johnjohnson@email.com",
+      "phoneNumber": "1231231234"
+    },
+    "302": {
+      "name": "Jane Doe",
+      "ssn": "8000000000",
+      "email": "janedoe@email.com",
+      "phoneNumber": "4321432143"
+    }
+  }
+}
