@@ -1,15 +1,29 @@
 {
-    "merchants": {
-        "123": { "id": 123, "name": "Merchant A", "allows_discount": true },
-        "124": { "id": 124, "name": "Merchant B", "allows_discount": false }
+  "orders": {
+    "1": {
+      "productId": 101,
+      "merchantId": 201,
+      "buyerId": 301,
+      "creditCard": {
+        "cardNumber": "1234123412341234",
+        "expirationMonth": 12,
+        "expirationYear": 2025,
+        "cvc": 123
+      },
+      "discount": 0.15
     },
-    "buyers": {
-        "123": { "id": 123, "name": "Buyer A" },
-    },
-    "products": {
-        "123": { "id": 123, "name": "Product A", "merchantId": 123, "isSoldOut": false },
-    },
-    "orders": {
+    "2": {
+      "productId": 102,
+      "merchantId": 202,
+      "buyerId": 302,
+      "creditCard": {
+        "cardNumber": "5678567856785678",
+        "expirationMonth": 11,
+        "expirationYear": 2024,
+        "cvc": 456
+      },
+      "discount": 0.10
     }
+  }
 }
 

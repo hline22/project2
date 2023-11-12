@@ -1,0 +1,18 @@
+{
+  "merchants": {
+    "201": {
+      "name": "Merchant One",
+      "ssn": "4000000000",
+      "email": "merchantone@email.com",
+      "phoneNumber": "1234567890",
+      "allowsDiscount": true
+    },
+    "202": {
+      "name": "Merchant Two",
+      "ssn": "5000000000",
+      "email": "merchanttwo@email.com",
+      "phoneNumber": "0987654321",
+      "allowsDiscount": false
+    }
+  }
+}
