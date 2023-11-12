@@ -1,0 +1,15 @@
+{
+    "merchants": {
+        "123": { "id": 123, "name": "Merchant A", "allows_discount": true },
+        "124": { "id": 124, "name": "Merchant B", "allows_discount": false }
+    },
+    "buyers": {
+        "123": { "id": 123, "name": "Buyer A" },
+    },
+    "products": {
+        "123": { "id": 123, "name": "Product A", "merchantId": 123, "isSoldOut": false },
+    },
+    "orders": {
+    }
+}
+

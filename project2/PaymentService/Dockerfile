@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["python", "buyer_service.py"]
+CMD ["python", "payment_service.py"]
